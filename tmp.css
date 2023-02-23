@@ -1,0 +1,878 @@
+
+@media only screen and (max-width: 899px) {
+  div.image_8 div.flipcard {
+    flex: 0 0 100%;
+  }
+
+  div.nomobile {
+    display: none;
+  }
+
+  h1 {
+    font-family: 'Google Sans';
+    font-size: 2em;
+    padding: 0 25px;
+  }
+
+  h2 {
+    font-family: 'Google Sans';
+    font-size: 1em;
+    padding: 0 25px;
+  }
+
+  h2.nomobile {
+    display: none;
+  }
+
+  h2.mobileonly {
+    font-family: 'Google Sans';
+    font-size: 1em;
+    padding: 0 25px;
+    margin: 0;
+  }
+
+  div.nav {
+    position: relative;
+  }
+
+  div.nav a {
+    margin: 25px 0px;
+    display: block;
+    width: 100px;
+    padding: 10px 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: white;
+    font-family: 'Google Sans';
+  }
+
+  div.content1 {
+    background-color: rgb(35, 35, 35);
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.content1.reversed {
+    flex-direction: column-reverse;
+  }
+
+  div.content div {
+    padding: 25px;
+    width: 100%;
+  }
+
+  div.content1 div.right {
+    padding: 25px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+  }
+  
+  div.content1 h1 {
+    font-size: 1.5em;
+    padding: 25px;
+  }
+  
+  div.content1 ul.highlights {
+    font-size: 1em;
+    margin: 0 0 0 50px;
+    padding: 0 25px 0 0;
+    list-style-type: decimal;
+  }
+  
+  div.content1 ul.highlights li {
+    padding: 0 0 10px 0;
+  }
+  
+  div.content1 table.pretty {
+    margin: 0 auto;
+  }
+  
+  div.content1 table.pretty th {
+    font-size: 1.2em;
+    vertical-align: bottom;
+  }
+  
+  div.content1 table.pretty th.fid {
+    text-align: center;
+  }
+  
+  div.content1 table.pretty td {
+    font-size: 1em;
+  }
+  
+  div.content1 table.pretty td.model {
+    padding: 0 10px;
+    color: rgb(123, 123, 123);
+  }
+  
+  div.content1 table.pretty td.fid {
+    text-align: center;
+    color: rgb(123, 123, 123);
+  }
+
+  div.content1 table.pretty caption {
+    text-align: center;
+    font-size: 1em;
+    color: rgb(26, 26, 26);
+  }
+
+  div.content {
+    padding: 25px 25px 0px 25px;
+  }
+
+  div.content h1 {
+    font-size: 2em;
+  }
+
+  div.content p {
+    padding: 0 25px 25px 25px;
+    margin: 0;
+    font-size: 1.6em;
+  }
+
+  div.content p.smaller {
+    padding: 0 25px 25px 25px;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  div.content a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+  }
+
+  div.content a:link {
+    text-decoration: none;
+  }
+
+  div.content a:visited {
+    text-decoration: none;
+  }
+
+  div.content a:active {
+    text-decoration: none;
+  }
+
+  div.content a:hover {
+    text-decoration: none;
+  }
+
+  div.authors {
+    padding: 25px 25px;
+  }
+
+  div.abstract {
+    background-color: rgb(64, 64, 64);
+    font-size: 1em;
+    padding: 25px;
+  }
+
+  div.abstract div.inside {
+    padding: 0;
+    text-align: justify;
+    margin: 0;
+  }
+
+  div.limitations {
+    font-size: 1em;
+    padding: 25px;
+  }
+
+  div.limitations div.inside {
+    padding: 0;
+    text-align: justify;
+    margin: 0;
+  }
+
+  div.white figure img {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  div.white figure figcaption {
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+  }
+
+  div.header_light_gray {
+    color: rgb(26, 26, 26);
+    padding: 25px 10px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  div.header_light_gray h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  div.header_light_gray h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  div.header_dark_gray {
+    padding: 25px 10px;
+    background-color: rgb(35, 35, 35);
+  }
+
+  div.header_dark_gray h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  div.header_dark_gray h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  div.header_dark {
+    padding: 25px 10px;
+    background-color: rgb(35, 35, 35);
+    color: rgb(245, 245, 245);
+  }
+
+  div.header_dark h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  div.header_dark h2 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  div.image_1_2_2 {
+  }
+
+  div.image_1_2_2 div.main {
+    width: 100%;
+  }
+
+  div.image_1_2_2 figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  div.image_1_2_2 figure figcaption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(35, 35, 35);
+    color: rgb(245, 245, 245);
+    opacity: 0.8;
+  }
+
+  div.image_1_2_2 img {
+    width: 100%;
+  }
+
+  div.image_1_2_2 div.abcd {
+    width: 100%;
+  }
+
+  div.image_1_2_2 div.abcd div.ab {
+    width: 100%;
+  }
+
+  div.image_1_2_2 div.abcd div.cd {
+    display: none;
+  }
+
+  div.demo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    min-height: 350px;
+  }
+
+  div.demo div.terminal {
+    width: 100%;
+    padding: 25px 25px 0 25px;
+    min-height: 200px;
+  }
+
+  div.demo div.container {
+    width: 100%;
+    position: relative;
+  }
+
+  div.demo div.container:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%; /*trick here*/
+  }
+
+  div.demo div.container div.dummy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  div.demo div.terminalflipcard img {
+    width: 100%;
+  }
+
+  #terminal {
+    font-family: monospace;
+    font-size: 1.1em;
+  }
+
+  #terminal span.typed {
+    color: red;
+    display: inline;
+  }
+
+  #terminal span.soon {
+    color: rgb(35, 35, 35);
+    display: inline;
+  }
+
+  div.compositional div.image img {
+    width: 100%;
+    max-width: 512px;
+    margin: 0;
+  }
+
+  div.compositional div.text {
+    width: 100%;
+    padding: 25px;
+  }
+
+  div.compositional div.text h3 {
+    margin: 0;
+    padding: 0 0 25px 0;
+    font-size: 1em;
+  }
+
+  div.compositional div.text h1.description {
+    font-size: 1.5em;
+    padding: 0;
+  }
+
+  div.compositional div.text p.description {
+    font-size: 1em;
+    padding-bottom: 25px;
+  }
+
+  div.compositional div.text p.left {
+    padding-right: 25px;
+  }
+  
+  div.compositional div.text p.right {
+    padding-left: 25px;
+    text-align: right;
+  }
+
+  div.compositional div.text span {
+    font-size: 1em;
+  }
+
+  div.image_2x4 {
+    display: flex;
+  }
+
+  div.image_2x4 figure {
+    margin: 0;
+    width: 100%;
+  }
+
+  div.image_2x4 figure figcaption {
+    /*
+    position: absolute;
+    bottom: 0px;
+    */
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /*
+    opacity: 0.8;
+    display: none;*/
+  }
+
+  div.image_2x4 figure:hover figcaption {
+    display: block;
+  }
+
+  div.image_2x4 img {
+    width: 100%;
+  }
+
+  div.image_2x4 div.abcd {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.image_2x4 div.abcd div.a {
+    width: 100%;
+  }
+
+  a.read-paper button {
+    width: 140px;
+    padding: 10px;
+    background: none;
+    font: inherit;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  div.image_8 div.flipcard {
+    flex: 0 0 25%;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-family: 'Google Sans';
+    font-size: 8em;
+    padding: 0 25px;
+  }
+  h2 {
+    font-family: 'Google Sans';
+    font-size: 2em;
+    padding: 0 25px;
+  }
+
+  h2.mobileonly {
+    display: none;
+  }
+
+  div.nav {
+    position: relative;
+  }
+
+  div.nav a {
+    margin: 25px 0px;
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0px;
+    color: white;
+    font-family: 'Google Sans';
+    float: right;
+    text-align: right;
+  }
+
+  div.content1 {
+    background-color: rgb(35, 35, 35);
+    color: rgb(245, 245, 245);
+    display: flex;
+  }
+
+  div.content1 div {
+    padding: 50px;
+    width: 50%;
+  }
+
+  div.content1 p {
+    font-size: 1.5em;
+  }
+
+  div.content1 div.right {
+    padding: 50px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+  }
+  
+  div.content1 h1 {
+    font-size: 2em;
+  }
+  
+  div.content1 ul.highlights {
+    font-size: 1.5em;
+    margin: 0 0 0 75px;
+    padding: 0;
+    list-style-type: decimal;
+  }
+  
+  div.content1 ul.highlights li {
+    padding: 0 0 25px 0;
+  }
+  
+  div.content1 table.pretty {
+    margin: 0 auto;
+  }
+  
+  div.content1 table.pretty th {
+    font-size: 1.0em;
+  }
+  
+  div.content1 table.pretty th.fid {
+    text-align: center;
+  }
+  
+  div.content1 table.pretty td {
+    font-size: 1.2em;
+  }
+  
+  div.content1 table.pretty td.model {
+    padding: 0 50px;
+    color: rgb(123, 123, 123);
+  }
+  
+  div.content1 table.pretty td.fid {
+    text-align: center;
+    color: rgb(123, 123, 123);
+  }
+
+  div.content1 table.pretty caption {
+    text-align: center;
+    color: rgb(26, 26, 26);
+    font-size: 1.5em;
+  }
+
+  div.content {
+    padding: 100px 100px 50px 100px;
+  }
+
+  div.content h1 {
+    font-size: 3em;
+  }
+
+  div.content p {
+    padding: 0 50px 50px 50px;
+    margin: 0;
+    font-size: 2em; 
+  }
+
+  div.content p.smaller {
+    padding: 0 50px 50px 50px;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  div.content a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+  }
+
+  div.content a:link {
+    text-decoration: none;
+  }
+
+  div.content a:visited {
+    text-decoration: none;
+  }
+
+  div.content a:active {
+    text-decoration: none;
+  }
+
+  div.content a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+  div.authors {
+    padding: 50px 100px;
+    font-size: 1.5em;
+  }
+
+  div.abstract {
+    background-color: rgb(50,50,50);
+    padding: 50px 100px;
+    font-size: 1.4em;
+  }
+
+  div.abstract div.inside {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  div.abstract div.inside p.text {
+    padding: 0 0 50px 0;
+    margin: 0;
+  }
+
+  div.limitations {
+    padding: 50px 100px;
+    font-size: 1.4em;
+  }
+
+  div.limitations div.inside {
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  div.limitations div.inside p.text {
+    padding: 0 0 50px 0;
+    margin: 0;
+  }
+
+  div.white figure img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+  }
+
+  div.white figure figcaption {
+    bottom: 0px;
+    width: 100%;
+    padding: 50px;
+    background-color: rgb(230, 230, 230);
+  }
+
+  div.white figure figcaption p {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 1.2em;
+  }
+
+  div.header_light_gray {
+    color: rgb(26, 26, 26);
+    padding: 50px;
+    background-color: rgb(245, 245, 245);
+  }
+
+  div.header_light_gray h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  div.header_light_gray h2 {
+    font-size: 2.0em;
+    text-align: center;
+  }
+
+  div.header_dark_gray {
+    padding: 50px;
+    background-color: rgb(100,100,100);
+    color: rgb(245, 245, 245);
+  }
+
+  div.header_dark_gray h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  div.header_dark_gray h2 {
+    font-size: 2.0em;
+    text-align: center;
+  }
+
+  div.header_dark {
+    padding: 50px;
+    background-color: rgb(35, 35, 35);
+    color: rgb(245, 245, 245);
+  }
+
+  div.header_dark h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  div.header_dark h2 {
+    font-size: 2.0em;
+    text-align: center;
+  }
+
+  div.image_1_2_2 {
+    display: flex;
+  }
+
+  div.image_1_2_2 figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  div.image_1_2_2 figure figcaption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    opacity: 0.8;
+    display: none;
+  }
+
+  div.image_1_2_2 figure:hover figcaption {
+    display: block;
+  }
+
+  div.image_1_2_2 div.main {
+    width: 50%;
+  }
+
+  div.image_1_2_2 img {
+    width: 100%;
+  }
+
+  div.image_1_2_2 div.abcd {
+    width: 50%;
+    display: flex;
+  }
+
+  div.image_1_2_2 div.abcd div.ab {
+    width: 50%;
+  }
+
+  div.image_1_2_2 div.abcd div.cd {
+    width: 50%;
+  }
+
+  div.compositional {
+    margin: auto;
+    max-width: 1200px;
+    margin: 30;
+  }
+
+  div.compositional div.image {
+    width: 50%;
+    max-width: 800;
+    margin: 0;
+  }
+
+  div.compositional div.text {
+    flex-grow: 1;
+    padding: 50px 50px 0 50px;
+    width: 50%;
+  }
+
+  div.compositional div.text h3 {
+    margin: 0;
+    padding: 0 0 50px 0;
+    font-size: 1.5em;
+  }
+
+  div.compositional div.text h1.description {
+    font-size: 2em;
+    padding: 0;
+  }
+
+  div.compositional div.text p.description {
+    font-size: 1.5em;
+    padding-bottom: 25px;
+  }
+
+  div.compositional div.text p.left {
+    padding: 0 0 10px 0;
+  }
+  
+  div.compositional div.text p.right {
+    padding: 0 0 10px 0;
+    text-align: right;
+  }
+
+  div.image_2x4 {
+    display: flex;
+  }
+
+  div.image_2x4 figure {
+    margin: 0;
+    width: 100%;
+  }
+
+  div.image_2x4 figure figcaption {
+    /*
+    position: absolute;
+    bottom: 0px;
+    */
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    /*
+    opacity: 0.8;
+    display: none;*/
+  }
+
+  div.image_2x4 figure:hover figcaption {
+    display: block;
+  }
+
+  div.image_2x4 img {
+    width: 100%;
+  }
+
+  div.image_2x4 div.abcd {
+    width: 100%;
+    display: flex;
+  }
+
+  div.image_2x4 div.abcd div.a {
+    width: 25%;
+  }
+
+  a.read-paper button {
+    width: 200px;
+    height: 50px;
+    background: none;
+    font: inherit;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1599px) {
+  div.compositional div.text span {
+    font-size: 1.2em;
+  }
+
+  div.compositional div.text span:hover {
+    font-size: 1.2em;
+    color: lightgreen;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1999px) {
+  div.compositional div.text span {
+    font-size: 1.6em;
+  }
+
+  div.compositional div.text span:hover {
+    font-size: 1.6em;
+    color: lightgreen;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  div.compositional div.text span {
+    font-size: 2.5em;
+  }
+
+  div.compositional div.text span.selected:hover {
+    font-size: 2.5em;
+    color: lightgreen;
+  }
+
+  div.compositional div.text span:hover {
+    font-size: 2.5em;
+    color: lightgreen;
+  }
+
+  div.compositional div.text p.left {
+    padding: 0 0 50px 0;
+    text-align: left;
+  }
+  
+  div.compositional div.text p.right {
+    padding: 0 0 50px 0;
+    text-align: left;
+  }
+}
+
