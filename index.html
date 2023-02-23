@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- anon-on -->
+    <meta name="twitter:site" content="@GoogleAI" />
+    <!-- anon-off -->
+    <meta name="twitter:title" content="Can Pre-trained Vision and Language Models Answer Visual Information-seeking Questions?" />
+    <meta name="twitter:description" content="Can Pre-trained Vision and Language Models Answer Visual Information-seeking Questions?" />
+    <meta name="twitter:image" content="https://muse-model.github.io/images/logo/muse_cake_1.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.flip.min.js"></script>
+
+    <title>Can Pre-trained Vision and Language Models Answer Visual Information-seeking Questions?</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8HJZTYJKX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V8HJZTYJKX');
+  </script>
+  <body>
+
+      <div style="display:flex; justify-content: center;">
+        <figure style="width:15%; padding:5px;">
+          <img src="./images/infoseek-images/building3.png" style="width:100%; height:150px; object-fit: cover;">
+          <figcaption>Which year was this building built?</figcaption>
+        </figure>
+        <figure style="width:15%; padding:5px;">
+          <img src="./images/infoseek-images/plant.png" style="width:100%; height:150px; object-fit: cover;">
+          <figcaption>Where is this plant native to?</figcaption>
+        </figure>
+        <figure style="width:15%; padding:5px;">
+          <img src="./images/infoseek-images/dog.png" style="width:100%; height:150px; object-fit: cover;">
+          <figcaption>What is the country of origin of this animal?</figcaption>
+        </figure>
+      </div>
+      
+    
+      
+      <h2 style="text-align: center;">Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?</h2>
+    <!-- anon-on -->
+    <div class="authors">      
+      <p>Yang Chen<sup>*</sup>, Hexiang Hu, Luan Yi, Haitian Sun, Soravit Changpinyo</p>
+      <p>Alan Ritter<sup>*</sup>, Ming-Wei Chang</p>
+      <!-- <p class="tiny"><sup>*</sup>Georgia Institute of Technology</p> -->
+      <center><img src="https://research.google/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research" height=25> <img src="https://brand.gatech.edu/sites/default/files/inline-images/extended-RGB.png" alt="Georgia Tech" height=40><sup>*</sup></center>
+      
+    </div>
+    <!-- anon-off -->
+  </div>
+    <div class="header_dark_gray">
+      <h1><i>InfoSeek</i> is a new info-seeking VQA benchmark </h1>
+    </div>
+
+    <!-- Block 1: System description -->
+
+    <div style="display:flex; justify-content: center;">
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/food.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: Which year was this food first created?</figcaption>
+        <figcaption>A: 0000</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/sport.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: Who is the founder of this sport?</figcaption>
+        <figcaption>A: Kanō Jigorō</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/bird.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: What is the length of this bird in centimetres?</figcaption>
+        <figcaption>A: 120 - 170</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/equipment.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: Who is the inventor of this object?</figcaption>
+        <figcaption>A: James Gregory</figcaption>
+      </figure>
+    </div>
+
+    <div style="display:flex; justify-content: center;">
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/drink.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: What culture first made this type of spirit?</figcaption>
+        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/fish.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: Who named these fishes?</figcaption>
+        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/car.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: What year did they stop pruduction of this car?</figcaption>
+        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
+      </figure>
+      <figure style="width:20%; padding:5px;">
+        <img src="./images/infoseek-images/insect.png" style="width:100%; height:200px; object-fit: cover;">
+        <figcaption>Q: Which year were these insects first discovered?</figcaption>
+        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
+      </figure>
+    </div>
+<!-- 
+    <div class="abstract">
+      <div class="inside">
+        <a class="read-paper" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Research Paper</button></a>
+        <a class="dataset" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Download Data</button></a>
+      </div>
+    </div> -->
+
+    <div class="content1">
+      <div>
+        <h1>Contributions</h1>
+        <ul class="highlights">
+          <li>InfoSeek: over 1 million {image, question, answer} triplets to support training and evaluation</li>
+          <li>Analysis shows InfoSeek elicits knowledge from pre-trained visual-language models</li>
+          <li>Identified unique advantage and what is currently missing from the pre-trained models</li>
+        </ul>
+      </div>
+      <div>
+        <a class="read-paper" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Research Paper</button></a>
+        <a class="dataset" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Download Data</button></a>
+      </div>
+
+  </div>
+
+
+  <div class="header_dark_gray">
+    <h1><i>InfoSeek</i> elicits knowledge from pre-trained multimodal models </h1>
+    <center><h5>Fine-tuned model generalizes to new real-world data </h5></center>
+  </div>
+
+  <div style="display:flex; justify-content: center;">
+    <figure style="width:20%; padding:5px;">
+      <img src="./images/real-world/hotel.png" style="width:100%; height:200px; object-fit: cover;">
+      <figcaption>Q: Which city is this hotel located in?</figcaption>
+      <figcaption style="color:black;">PaLI: Pattaya <span style="color: green;">&#10004;</span></figcaption>
+    </figure>
+    <figure style="width:20%; padding:5px;">
+      <img src="./images/real-world/paint.jpg" style="width:100%; height:200px; object-fit: cover;">
+      <figcaption>Q: What year was this painting created?</figcaption>
+      <figcaption style="color:black;">PaLI: 1877 <span style="color: green;">&#10004;</span></figcaption>
+    </figure>
+    <figure style="width:20%; padding:5px;">
+      <img src="./images/real-world/shoes.png" style="width:100%; height:200px; object-fit: cover;">
+      <figcaption>Q: Who is the designer of these shoes?</figcaption>
+      <figcaption style="color:black;">PaLI: Nicolas Ghesquiere <span style="color: red;">&#9083;</span></figcaption>
+    </figure>
+  </div>
+</div>
+
+</div>
+<div class="header_dark_gray">
+  <h1>Pre-trained End-to-end models have unique advantages but missing deeper knowledge </h1>
+  <!-- <center><h5> </h5></center> -->
+</div>
+
+<div style="display:flex; justify-content: center;">
+  <figure style="width:20%; padding:5px;">
+    <img src="./images/infoseek-images/animal.png" style="width:100%; height:200px; object-fit: cover;">
+    <figcaption>Q: Which region is this animal exclusively found?</figcaption>
+    <figcaption style="color:black;">End-to-end (PaLI): U.S.A <span style="color: green;">&#10004;</span></figcaption>
+    <figcaption style="color:black;">Pipeline (FID): Brazil <span style="color: red;">&#x2718; </span></figcaption>
+  </figure>
+  <figure style="width:20%; padding:5px;">
+    <img src="./images/infoseek-images/building2.png" style="width:100%; height:200px; object-fit: cover;">
+    <figcaption>Q: What country does this building belong to?</figcaption>
+    <figcaption style="color:black;">End-to-end (PaLI): Brazil <span style="color: green;">&#10004;</span></figcaption>
+    <figcaption style="color:black;">Pipeline (FID): United Kingdom <span style="color: red;">&#x2718; </span></figcaption>
+  </figure>
+  <figure style="width:20%; padding:5px;">
+    <img src="./images/infoseek-images/aircraft.png" style="width:100%; height:200px; object-fit: cover;">
+    <figcaption>Q: What was the date this type of aircraft took the first flight?</figcaption>
+    <figcaption style="color:black;">End-to-end (PaLI): 1955 2 22 <span style="color: red;">&#x2718; </span></figcaption>
+    <figcaption style="color:black;">Pipeline (FID): 1981 September 26 <span style="color: green;">&#10004;</span></figcaption>
+  </figure>
+  <figure style="width:20%; padding:5px;">
+    <img src="./images/infoseek-images/building.png" style="width:100%; height:200px; object-fit: cover;">
+    <figcaption>Q: What is the altitude of this building measured at meters above sea level??</figcaption>
+    <figcaption style="color:black;">End-to-end (PaLI): 3800 <span style="color: red;">&#x2718; </span></figcaption>
+    <figcaption style="color:black;">Pipeline (FID): 2430 <span style="color: green;">&#10004;</span></figcaption>
+  </figure>
+</div>
+</div>
+
+<div class="header_dark_gray">
+  <h1> Model Details </h1>
+  <center><h5> End-to-end Models vs Pipeline Systems </h5></center>
+</div>
+<div style="display:flex; justify-content: center;">
+  <figure style="width:30%; padding:5px;">
+    <img src="./images/model/figure_model_left.png" style="max-width:100%; max-height:100%; width:auto; height:auto; object-fit: cover;">
+    <center><figcaption>End-to-end Models with No Knowledge Base (KB)</figcaption></center>
+  </figure>
+  <figure style="width:52.5%; padding:1px;">
+    <img src="./images/model/figure_model_right.png" style="max-width:100%; max-height:100%; width:auto; height:auto; object-fit: cover;">
+    <center><figcaption>Pipeline Systems with Knowledge Base (KB)</figcaption></center>
+  </figure>
+  </div>
+</div>
+
+
+    <script type="text/javascript">
+      logo_images = [
+        {"src": "./images/infoseek-images/aircraft.png",
+          "caption": "what is the date this aircraft took the first flight?"},
+        {"src": "./images/infoseek-images/building2.png",
+          "caption": "What country does this building belong to?"},
+        {"src": "./images/infoseek-images/animal.png", "caption": "Where is this animal found exclusively?"},
+        {"src": "./images/infoseek-images/plant.png", "caption": "Where is this plant native to?"} 
+      ];
+
+      gallery_images = [{"src": "./images/infoseek-images/aircraft.png", "caption": "what is the date this aircraft took the first flight?"},
+      {"src": "./images/infoseek-images/car.png", "caption": "What engine is used by this vehicle to provide power?"},
+      {"src": "./images/infoseek-images/bird.png", "caption": "What is the length of this bird in centimetre?"},
+      {"src": "./images/infoseek-images/animal.png", "caption": "Where is this animal found exclusively?"},
+      {"src": "./images/infoseek-images/dog.png", "caption": "What is the country of origin of this animal?"},
+      {"src": "./images/infoseek-images/food.png", "caption": "Who is the inventor of this food?"},
+      {"src": "./images/infoseek-images/lake.png", "caption": "Which mountain range is this lake belong to?"},
+      {"src": "./images/infoseek-images/piano.png", "caption": "What is the highest note this item can play?"},
+      {"src": "./images/infoseek-images/plant.png", "caption": "Where is this plant native to?"} 
+      ];
+
+      lastCardFlippedIdx = {
+        gallery0: -1,
+        gallery1: -1,
+      };
+
+      lastCardFlippedLastSwapTime = {
+        gallery0: -1,
+        gallery1: -1,
+      };
+
+      $(".flipcard").flip({
+        trigger: "manual",
+        reverse: false,
+      });
+
+      function checkIfImageIsVisible(name, image) {
+        numCards = $(name + " .flipcard:visible").size();
+
+        for (var cardIdx = 0; cardIdx < numCards; ++cardIdx) {
+          var isFlipped = $(name + " #fig" + cardIdx).data("flip-model").isFlipped;
+          if (!isFlipped) {
+            src = $(name + " #fig" + cardIdx + " div.front figure img").attr("src")
+          } else {
+            src = $(name + " #fig" + cardIdx + " div.back figure img").attr("src")
+          }
+
+          if (image.src == src) {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      function getNextImage(name) {
+        // different galleries have different sources of imagery.
+        if (name == "#gallery0") {
+            img_src = logo_images;
+        } else {
+            img_src = gallery_images;
+        }
+        while (true) {
+          randomImageIdx = Math.floor(Math.random() * img_src.length);
+          if (!checkIfImageIsVisible(name, img_src[randomImageIdx])) {
+            return img_src[randomImageIdx];
+          }
+        }
+      }
+
+      function randomSwapImageWithId(name, randomCardIdx) {
+        numCards = $(name + " .flipcard:visible").size();
+
+        image = getNextImage(name);
+
+        const d = new Date();
+        let currentTime = d.getTime();
+        lastCardFlippedIdx[name] = randomCardIdx;
+        lastCardFlippedLastSwapTime[name] = currentTime;
+
+        var isFlipped = $(name + " #fig" + randomCardIdx).data("flip-model").isFlipped;
+        if (!isFlipped) {
+          $(name + " #fig" + randomCardIdx + " div.back figure img").attr("src", image.src)
+          $(name + " #fig" + randomCardIdx + " div.back figure figcaption").text(image.caption)
+        } else {
+          $(name + " #fig" + randomCardIdx + " div.front figure img").attr("src", image.src)
+          $(name + " #fig" + randomCardIdx + " div.front figure figcaption").text(image.caption)
+        }
+
+        $(name + " #fig" + randomCardIdx).flip("toggle");
+      }
+
+      function randomSwapImage(name) {
+        numCards = $(name + " .flipcard:visible").size();
+
+        const d = new Date();
+        if (d.getTime() - lastCardFlippedIdx[name] < 5000) {
+          setTimeout(randomSwapImage, 1000, name);
+          return;
+        }
+
+        do {
+          randomCardIdx = Math.floor(Math.random() * numCards);
+          if (numCards == 1) {
+            break;
+          }
+        } while (randomCardIdx == lastCardFlippedIdx[name]);
+
+        randomSwapImageWithId(name, randomCardIdx);
+        setTimeout(randomSwapImage, 3000, name);
+      }
+      setTimeout(randomSwapImage, 6000, "#gallery0");
+
+      function setupGallery1(id) {
+            randomSwapImageWithId("#gallery1", id);
+            $("#gallery1 #fig" + id).click(
+              function() {
+                randomSwapImageWithId("#gallery1", id);
+              }
+            );
+      }
+      for (id = 0; id < 8; id ++) {
+            setupGallery1(id);
+      }
+      $("#gallery0 #fig0").click(
+        function() {
+          randomSwapImageWithId("#gallery0", 0);
+        }
+      );
+
+      setTimeout(randomSwapImage, 1000, "#gallery1");
+    </script>
+
+   
+    <script type="text/javascript">
+      compositionalAnimalsManualClicked = false;
+      compositionalMadeOfManualClicked = false;
+
+      comp_files = {
+        "Original (with mask)": "./images/inpaint/boston_masked.jpg",
+        "\"New York in the background\"": "./images/inpaint/boston_nyc.jpg",
+        "\"Paris in the background\"": "./images/inpaint/boston_paris.jpg",
+        "\"San Francisco in the background\"": "./images/inpaint/boston_sf.jpg"
+      }
+
+      function updateComposition(name) {
+        var compositionSpans = $(name + " p span.selected").map(function() {
+          return $(this).text();
+        }).get();
+        var compositionText = "";
+        for (var compositionSpansIdx = 0; compositionSpansIdx < compositionSpans.length; ++compositionSpansIdx) {
+          if (compositionSpansIdx > 0) {
+            compositionText += " ";
+          }
+          compositionText += compositionSpans[compositionSpansIdx];
+        }
+        if (name == "#compositional_madeof") {
+          if (compositionText == "Original") {
+            $(name + "_img").attr("src", "./images/edit_opt/orig.gif")
+          } else {
+            // Generate a random index that is not the one already selected
+            randImgIdx = "/"; // something guaranteed to be in the path
+            cur_src = $(name + "_img").attr("src");
+            while (cur_src.search(randImgIdx) != -1) {
+              randImgIdx = Math.floor(Math.random() * 4);
+            }
+            first_space = compositionText.search(" ");
+            file = compositionText.slice(first_space + 1, -2).replaceAll(" ", "-");
+            $(name + "_img").attr("src", "./images/edit_opt/" + file + "_" + randImgIdx + ".gif")
+          }
+        } else if (name == "#compositional_animals") {
+          randImgIdx = Math.floor(Math.random() * 4);
+          $(name + "_img").attr("src", comp_files[compositionText]);
+        }
+      }
+
+      function randomComposition(name) {
+        if (name == "#compositional_animals" && compositionalAnimalsManualClicked == true) {
+          compositionalAnimalsManualClicked = false;
+          setTimeout(randomComposition, 4000, name);
+          return;
+        } else if (name == "#compositional_madeof" &&
+                   compositionalMadeOfManualClicked == true) {
+          compositionalMadeOfManualClicked = false;
+          setTimeout(randomComposition, 4000, name);
+          return;
+        }
+
+        var compositionPs = $(name + " p.selectable").toArray();
+        var compositionOptions = [];
+        for (var i = 0; i < compositionPs.length; ++i) {
+          var compositionSpanSelected = $(compositionPs[i]).children("span.selected");
+          var compositionSpans = $(compositionPs[i]).children("span").not("span.selected").toArray();
+          for (var j = 0; j < compositionSpans.length; ++j) {
+            compositionOption = {
+              "p": compositionPs[i],
+              "span_selected": compositionSpanSelected,
+              "span_option": $(compositionSpans[j])
+            };
+            compositionOptions.push(compositionOption);
+          }
+        }
+
+        randomCompositionOptionIdx = Math.floor(Math.random() * compositionOptions.length);
+        randomCompositionOption = compositionOptions[randomCompositionOptionIdx];
+
+        randomCompositionOption.span_selected.toggleClass("selected");
+        randomCompositionOption.span_option.toggleClass("selected");
+
+        updateComposition(name);
+        setTimeout(randomComposition, 4000, name);
+      }
+
+      $("#compositional_animals p.selectable span").click(function() {
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
+        updateComposition("#compositional_animals");
+        compositionalAnimalsManualClicked = true;
+      });
+      $("#compositional_madeof_img").click(function() {
+        updateComposition("#compositional_madeof");
+        compositionalAnimalsManualClicked = true;
+      });
+
+      $("#compositional_madeof p.selectable span").click(function() {
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
+        updateComposition("#compositional_madeof");
+        compositionalMadeOfManualClicked = true;
+      });
+
+      <!-- setTimeout(randomComposition, 2000, "#compositional_animals"); -->
+      <!-- setTimeout(randomComposition, 4000, "#compositional_madeof"); -->
+    </script>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
