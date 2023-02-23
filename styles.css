@@ -262,6 +262,12 @@ a.read-paper button:hover {
     padding: 0 25px;
   }
 
+  h5 {
+    font-family: 'Google Sans';
+    font-size: 0.5em;
+    padding: 0 25px;
+  }
+
   h2.nomobile {
     display: none;
   }
@@ -269,6 +275,13 @@ a.read-paper button:hover {
   h2.mobileonly {
     font-family: 'Google Sans';
     font-size: 1em;
+    padding: 0 25px;
+    margin: 0;
+  }
+
+  h5.mobileonly {
+    font-family: 'Google Sans';
+    font-size: 0.em;
     padding: 0 25px;
     margin: 0;
   }
@@ -449,6 +462,11 @@ a.read-paper button:hover {
 
   div.header_light_gray h1 {
     font-size: 1.2em;
+    text-align: center;
+  }
+
+  div.header_light_gray h5 {
+    font-size: 0.5em;
     text-align: center;
   }
 
