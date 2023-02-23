@@ -34,21 +34,39 @@
   </script>
   <body>
 
-      <div style="display:flex; justify-content: center;">
+      <!-- <div style="display:flex; justify-content: center;">
         <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/building3.png" style="width:100%; height:150px; object-fit: cover;">
+          <img src="./images/infoseek-images/building3.png" style="width:100%; height:100%; object-fit: cover;">
           <figcaption>Which year was this building built?</figcaption>
         </figure>
         <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/plant.png" style="width:100%; height:150px; object-fit: cover;">
+          <img src="./images/infoseek-images/plant.png" style="width:100%; height:100%; object-fit: cover;">
           <figcaption>Where is this plant native to?</figcaption>
         </figure>
         <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/dog.png" style="width:100%; height:150px; object-fit: cover;">
+          <img src="./images/infoseek-images/dog.png" style="width:100%; height:100%; object-fit: cover;">
           <figcaption>What is the country of origin of this animal?</figcaption>
         </figure>
       </div>
-      
+       -->
+
+    <div id="gallery0" style="padding-top: 50px; padding-bottom: 50px; background-color: rgb(245,245,245);">
+      <center>
+      <div class="flipcard" id="fig0">
+        <div class="front">
+          <figure>
+            <img src="./images/infoseek-images/building3.png" style="width: 100%; height: 100%; max-width: 250px; max-height: 200px;">
+            <figcaption>Which year was this building built?</figcaption>
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img src="./images/infoseek-images/dog.png"  style="width: 100%; height: 100%; max-width: 250px; max-height: 200px;">
+            <figcaption>What is the country of origin of this animal?</figcaption>
+          </figure>
+        </div>
+      </div>
+      </center>
     
       
       <h2 style="text-align: center;">Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?</h2>
@@ -58,60 +76,148 @@
       <p>Alan Ritter<sup>*</sup>, Ming-Wei Chang</p>
       <!-- <p class="tiny"><sup>*</sup>Georgia Institute of Technology</p> -->
       <center><img src="https://research.google/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research" height=25> <img src="https://brand.gatech.edu/sites/default/files/inline-images/extended-RGB.png" alt="Georgia Tech" height=40><sup>*</sup></center>
-      
     </div>
     <!-- anon-off -->
   </div>
     <div class="header_dark_gray">
-      <h1><i>InfoSeek</i> is a new info-seeking VQA benchmark </h1>
+      <h1><i>InfoSeek</i>, A New Benchmark for Visual Info-Seeking Questions </h1>
+      <center><h5>Asking Questions about Something You Don't Know </h5></center>
     </div>
 
-    <!-- Block 1: System description -->
-
-    <div style="display:flex; justify-content: center;">
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/food.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: Which year was this food first created?</figcaption>
-        <figcaption>A: 0000</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/sport.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: Who is the founder of this sport?</figcaption>
-        <figcaption>A: Kanō Jigorō</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/bird.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: What is the length of this bird in centimetres?</figcaption>
-        <figcaption>A: 120 - 170</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/equipment.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: Who is the inventor of this object?</figcaption>
-        <figcaption>A: James Gregory</figcaption>
-      </figure>
-    </div>
-
-    <div style="display:flex; justify-content: center;">
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/drink.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: What culture first made this type of spirit?</figcaption>
-        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/fish.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: Who named these fishes?</figcaption>
-        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/car.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: What year did they stop pruduction of this car?</figcaption>
-        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
-      </figure>
-      <figure style="width:20%; padding:5px;">
-        <img src="./images/infoseek-images/insect.png" style="width:100%; height:200px; object-fit: cover;">
-        <figcaption>Q: Which year were these insects first discovered?</figcaption>
-        <figcaption style="color:grey;">A: Hidden (test set)</figcaption>
-      </figure>
+    <div class="image_8" id="gallery1">
+      <div class="flipcard" id="fig0">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/food.png">
+            <figcaption>Q: Which year was this food first created?</figcaption>
+            <figcaption>A: 0000</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption>.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig1">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/sport.png"> -->
+            <!-- <figcaption>Q: Who is the founder of this sport?</figcaption> -->
+            <!-- <figcaption>A: Kanō Jigorō</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img />
+            <figcaption />
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig2">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/bird.png">
+            <figcaption>Q: What is the length of this bird in centimetres?</figcaption> -->
+            <!-- <figcaption>A: 120 - 170</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig3">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/equipment.png">
+            <figcaption>Q: Who is the inventor of this object?</figcaption> -->
+            <!-- <figcaption>A: James Gregory</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <figcaption>A cake made of macarons in a heart shape.</figcaption> -->
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig4">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/drink.png">
+            <figcaption>Q: What culture first made this type of spirit?</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption>.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig5">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/car.png">
+            <figcaption>Q: What year did they stop pruduction of this car?</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig6">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/insect.png">
+            <figcaption>Q: Which year were these insects first discovered?</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption>.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flipcard nomobile" id="fig7">
+        <div class="front">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+            <!-- <img src="./images/infoseek-images/fish.png">
+            <figcaption>Q: Who named these fishes?</figcaption> -->
+          </figure>
+        </div>
+        <div class="back">
+          <figure>
+            <img>
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
 <!-- 
     <div class="abstract">
@@ -131,74 +237,97 @@
         </ul>
       </div>
       <div>
-        <a class="read-paper" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Research Paper</button></a>
-        <a class="dataset" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Download Data</button></a>
+        <a class="read-paper" href="", style="_blank"><button>Research Paper</button></a>
+        <a class="read-paper" href="", style="_blank"><button>Download Data</button></a>
       </div>
 
   </div>
 
 
   <div class="header_dark_gray">
-    <h1><i>InfoSeek</i> elicits knowledge from pre-trained multimodal models </h1>
-    <center><h5>Fine-tuned model generalizes to new real-world data </h5></center>
+    <h1>Unlocking the Power of Pre-trained Vision-Language Models </h1>
+    <center><h5>Fine-tuning on InfoSeek Elicits Knowledge to Answer New Real-World Data </h5></center>
   </div>
 
-  <div style="display:flex; justify-content: center;">
-    <figure style="width:20%; padding:5px;">
-      <img src="./images/real-world/hotel.png" style="width:100%; height:200px; object-fit: cover;">
-      <figcaption>Q: Which city is this hotel located in?</figcaption>
-      <figcaption style="color:black;">PaLI: Pattaya <span style="color: green;">&#10004;</span></figcaption>
-    </figure>
-    <figure style="width:20%; padding:5px;">
-      <img src="./images/real-world/paint.jpg" style="width:100%; height:200px; object-fit: cover;">
+  <div class="edit_grid">
+
+    <div>
+      <figure>
+        
+        <img src="./images/real-world/hotel.png" style="width:100%; object-fit: cover;">
+        <figcaption>Q: Which city is this hotel located in?</figcaption>
+        <figcaption style="color:black;">PaLI: Pattaya <span style="color: green;">&#10004;</span></figcaption>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        
+        <img src="./images/real-world/paint.png" style="width:100%; object-fit: cover;">
       <figcaption>Q: What year was this painting created?</figcaption>
       <figcaption style="color:black;">PaLI: 1877 <span style="color: green;">&#10004;</span></figcaption>
-    </figure>
-    <figure style="width:20%; padding:5px;">
-      <img src="./images/real-world/shoes.png" style="width:100%; height:200px; object-fit: cover;">
+      </figure>
+    </div>
+
+  </div>
+  <div class="edit_grid">
+  </div>
+
+    <!-- <figure style="width:20%; padding:5px;">
+      <img src="./images/real-world/shoes.png" style="width:100%; object-fit: cover;">
       <figcaption>Q: Who is the designer of these shoes?</figcaption>
       <figcaption style="color:black;">PaLI: Nicolas Ghesquiere <span style="color: red;">&#9083;</span></figcaption>
     </figure>
-  </div>
+  </div> -->
 </div>
 
 </div>
 <div class="header_dark_gray">
-  <h1>Pre-trained End-to-end models have unique advantages but missing deeper knowledge </h1>
+  <h1>Discovering Pre-trained Visual-Language Models' Strengths and Weaknesses </h1>
+  <center><h5>Good at Surface-level Questions, but Missing Deeper Knowledge</h5></center>
   <!-- <center><h5> </h5></center> -->
 </div>
 
-<div style="display:flex; justify-content: center;">
-  <figure style="width:20%; padding:5px;">
-    <img src="./images/infoseek-images/animal.png" style="width:100%; height:200px; object-fit: cover;">
-    <figcaption>Q: Which region is this animal exclusively found?</figcaption>
+<div class="edit_grid">
+
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/animal.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: Which region is this animal exclusively found?</figcaption>
     <figcaption style="color:black;">End-to-end (PaLI): U.S.A <span style="color: green;">&#10004;</span></figcaption>
     <figcaption style="color:black;">Pipeline (FID): Brazil <span style="color: red;">&#x2718; </span></figcaption>
-  </figure>
-  <figure style="width:20%; padding:5px;">
-    <img src="./images/infoseek-images/building2.png" style="width:100%; height:200px; object-fit: cover;">
-    <figcaption>Q: What country does this building belong to?</figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/building2.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What country does this building belong to?</figcaption>
     <figcaption style="color:black;">End-to-end (PaLI): Brazil <span style="color: green;">&#10004;</span></figcaption>
     <figcaption style="color:black;">Pipeline (FID): United Kingdom <span style="color: red;">&#x2718; </span></figcaption>
-  </figure>
-  <figure style="width:20%; padding:5px;">
-    <img src="./images/infoseek-images/aircraft.png" style="width:100%; height:200px; object-fit: cover;">
-    <figcaption>Q: What was the date this type of aircraft took the first flight?</figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/aircraft.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What was the date this type of aircraft took the first flight?</figcaption>
     <figcaption style="color:black;">End-to-end (PaLI): 1955 2 22 <span style="color: red;">&#x2718; </span></figcaption>
     <figcaption style="color:black;">Pipeline (FID): 1981 September 26 <span style="color: green;">&#10004;</span></figcaption>
-  </figure>
-  <figure style="width:20%; padding:5px;">
-    <img src="./images/infoseek-images/building.png" style="width:100%; height:200px; object-fit: cover;">
-    <figcaption>Q: What is the altitude of this building measured at meters above sea level??</figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/building.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What is the altitude of this building measured at meters above sea level?</figcaption>
     <figcaption style="color:black;">End-to-end (PaLI): 3800 <span style="color: red;">&#x2718; </span></figcaption>
     <figcaption style="color:black;">Pipeline (FID): 2430 <span style="color: green;">&#10004;</span></figcaption>
-  </figure>
+    </figure>
+  </div>
 </div>
+<div class="edit_grid">
 </div>
 
 <div class="header_dark_gray">
-  <h1> Model Details </h1>
-  <center><h5> End-to-end Models vs Pipeline Systems </h5></center>
+  <h1> End-to-end vs Two-stage Pipeline </h1>
+  <center><h5>  We studied End-to-end model (PaLI) vs Pipeline Systems (Entity Recognition + Language QA)</h5></center>
 </div>
 <div style="display:flex; justify-content: center;">
   <figure style="width:30%; padding:5px;">
@@ -216,22 +345,29 @@
     <script type="text/javascript">
       logo_images = [
         {"src": "./images/infoseek-images/aircraft.png",
-          "caption": "what is the date this aircraft took the first flight?"},
+          "caption": "What is the date this aircraft took the first flight?"},
         {"src": "./images/infoseek-images/building2.png",
           "caption": "What country does this building belong to?"},
-        {"src": "./images/infoseek-images/animal.png", "caption": "Where is this animal found exclusively?"},
-        {"src": "./images/infoseek-images/plant.png", "caption": "Where is this plant native to?"} 
+        {"src": "./images/infoseek-images/animal.png", "caption": "Which region is this animal exclusively found?"},
       ];
 
-      gallery_images = [{"src": "./images/infoseek-images/aircraft.png", "caption": "what is the date this aircraft took the first flight?"},
-      {"src": "./images/infoseek-images/car.png", "caption": "What engine is used by this vehicle to provide power?"},
-      {"src": "./images/infoseek-images/bird.png", "caption": "What is the length of this bird in centimetre?"},
-      {"src": "./images/infoseek-images/animal.png", "caption": "Where is this animal found exclusively?"},
-      {"src": "./images/infoseek-images/dog.png", "caption": "What is the country of origin of this animal?"},
+      gallery_images = [
+      {"src": "./images/infoseek-images/aircraft.png", "caption": "What is the date this aircraft took the first flight? (1981 September 26)"},
+      {"src": "./images/infoseek-images/sport.png", "caption": "Who is the founder of this sport? (Kanō Jigorō)"},
+      {"src": "./images/infoseek-images/bird.png", "caption": "What is the length of this bird in centimetre? (120-170)"},
+      {"src": "./images/infoseek-images/animal.png", "caption": "Where is this animal found exclusively? (USA)"},
+      {"src": "./images/infoseek-images/equipment.png", "caption": "Who is the inventor of this object? (James Gregory)"},
+      {"src": "./images/infoseek-images/dog.png", "caption": "What is the country of origin of this animal? (Rhodesia)"},
+      {"src": "./images/infoseek-images/building3.png", "caption": "In which year was did this building officially open? (1930)"},
       {"src": "./images/infoseek-images/food.png", "caption": "Who is the inventor of this food?"},
-      {"src": "./images/infoseek-images/lake.png", "caption": "Which mountain range is this lake belong to?"},
-      {"src": "./images/infoseek-images/piano.png", "caption": "What is the highest note this item can play?"},
-      {"src": "./images/infoseek-images/plant.png", "caption": "Where is this plant native to?"} 
+      {"src": "./images/infoseek-images/lake.png", "caption": "Which mountain range is this lake belong to? (Alp)"},
+      {"src": "./images/infoseek-images/piano.png", "caption": "What is the highest note this item can play? (C8)"},
+      {"src": "./images/infoseek-images/building2.png", "caption": "Which country does this building belong to? (Brazil)"},
+      {"src": "./images/infoseek-images/plant.png", "caption": "Where is this plant native to? (Ecuador)"},
+      {"src": "./images/infoseek-images/car.png", "caption": "What year did they stop production of this car? (Test set)"},
+      {"src": "./images/infoseek-images/insect.png", "caption": "Which year was this insect first discovered? (Test set)"},
+      {"src": "./images/infoseek-images/fish.png", "caption": "Who named these fishes? (Test set)"},
+      {"src": "./images/infoseek-images/drink.png", "caption": "What culture first made this type of spirit? (Test set)"}
       ];
 
       lastCardFlippedIdx = {

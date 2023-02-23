@@ -12,7 +12,7 @@ a {
 
 
 div.edit_grid {
-  text-align: center;
+  text-align: left;
   border-style: solid;
   border-radius: 15px;
   border-width: 3px;
@@ -36,7 +36,7 @@ div.edit_grid {
 div.edit_grid img {
   width: 100%;
   max-width: 512px;
-  margin-bottom: -15px;
+  margin-bottom: 15px;
 }
 
 
@@ -104,9 +104,11 @@ div.white figure {
 
 .icon {
   width: 12.5%;
+  max-height: 100px;
   float: left;
   padding-right: 2px;
   padding-top: 2px;
+  padding-bottom: 20px;
 }
 
 .icon:hover {
@@ -662,6 +664,11 @@ a.read-paper button:hover {
     cursor: pointer;
   }
 
+  /* div.image_8 div.flipcard img {
+    max-width: 100px;
+    max-height: 100px;
+  } */
+
   h1 {
     font-family: 'Google Sans';
     font-size: 8em;
@@ -847,6 +854,13 @@ a.read-paper button:hover {
 
   div.white figure img {
     display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+  }
+
+  div.white figure img2 {
     margin: auto;
     width: 100%;
     max-width: 1000px;
