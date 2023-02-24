@@ -137,7 +137,7 @@ div.image_8 figure figcaption {
   opacity: 0.8;
   display: block;
   font-size: 1.4em;
-  height: 8.5em;
+  height: 3.0em;
 }
 
 div.image_8 img {
@@ -687,10 +687,6 @@ a.read-paper button:hover {
     cursor: pointer;
   }
 
-  /* div.image_8 div.flipcard img {
-    max-width: 100px;
-    max-height: 100px;
-  } */
 
   h1 {
     font-family: 'Google Sans';
@@ -1103,14 +1099,9 @@ a.read-paper button:hover {
   }
 }
 
-  /* .chat-icon::before {
-    content: url("./images/real-world/user.jpeg");
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    width: 100px; 
-    height: 100px; 
-  } */
+div.text-small {
+  font-size: 0.75em;
+}
 
 @media only screen and (min-width: 900px) and (max-width: 1599px) {
   div.compositional div.text span {
