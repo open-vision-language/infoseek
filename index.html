@@ -203,11 +203,12 @@
 
     <div class="content1">
       <div>
-        <h1>Contributions</h1>
-        <ul class="highlights">
-          <li>InfoSeek: over 1 million {image, question, answer} triplets to support training and evaluation</li>
-          <li>Analysis shows InfoSeek elicits knowledge from pre-trained visual-language models</li>
-          <li>Pre-trained visual-language models have unique advantage but missing deeper knowledge</li>
+        <h1>Our Contributions</h1>
+        <ul class="highlights smaller">
+          <li>Collect and Annotate InfoSeek-Human: A large dataset with naturally collected visual info-seeking questions.</li>
+          <li>Construct InfoSeek-Wikidata: A semi-automated dataset with over 1 million {image, question, answer} triplets to support training and evaluation models on visual info-seeking VQA.</li>
+          <li>Experiment State-of-the-Art pre-trained vision-language models, large language models and their combination on the InfoSeek.</li>
+          <li>Peform in-depth analysis on such pre-trained models, and analyze the pros and cons for different models.</li>
         </ul>
       </div>
     </div>
@@ -232,63 +233,17 @@
       <figure>
         
         <img src="./images/real-world/paint.png" style="width:100%; object-fit: cover;">
-      <figcaption>Q: What year was this painting created?</figcaption>
-      <figcaption style="color:black;">PaLI: 1877 <span style="color: green;">&#10004;</span></figcaption>
+        <figcaption>Q: What year was this painting created?</figcaption>
+        <figcaption style="color:black;">PaLI: 1877 <span style="color: green;">&#10004;</span></figcaption>
       </figure>
     </div>
-
-  </div>
-  <div class="edit_grid">
   </div>
 </div>
 
-</div>
-<div class="header_dark_gray">
-  <h1>Discovering Pre-trained Visual-Language Models' Strengths and Weaknesses </h1>
-  <center><h5>Good at Surface-level Questions, but Missing Deeper Knowledge</h5></center>
-  <!-- <center><h5> </h5></center> -->
-</div>
-
-<div class="edit_grid">
-
-  <div>
-    <figure>
-      <img src="./images/infoseek-images/animal.png" style="width:100%; height:100%; object-fit: cover;">
-      <figcaption>Q: Which region is this animal exclusively found?</figcaption>
-    <figcaption style="color:black;">End-to-end (PaLI): U.S.A <span style="color: green;">&#10004;</span></figcaption>
-    <figcaption style="color:black;">Pipeline (FID): Brazil <span style="color: red;">&#x2718; </span></figcaption>
-    </figure>
-  </div>
-  <div>
-    <figure>
-      <img src="./images/infoseek-images/building2.png" style="width:100%; height:100%; object-fit: cover;">
-      <figcaption>Q: What country does this building belong to?</figcaption>
-    <figcaption style="color:black;">End-to-end (PaLI): Brazil <span style="color: green;">&#10004;</span></figcaption>
-    <figcaption style="color:black;">Pipeline (FID): United Kingdom <span style="color: red;">&#x2718; </span></figcaption>
-    </figure>
-  </div>
-  <div>
-    <figure>
-      <img src="./images/infoseek-images/aircraft.png" style="width:100%; height:100%; object-fit: cover;">
-      <figcaption>Q: What was the date this type of aircraft took the first flight?</figcaption>
-    <figcaption style="color:black;">End-to-end (PaLI): 1955 2 22 <span style="color: red;">&#x2718; </span></figcaption>
-    <figcaption style="color:black;">Pipeline (FID): 1981 September 26 <span style="color: green;">&#10004;</span></figcaption>
-    </figure>
-  </div>
-  <div>
-    <figure>
-      <img src="./images/infoseek-images/building.png" style="width:100%; height:100%; object-fit: cover;">
-      <figcaption>Q: What is the altitude of this building measured at meters above sea level?</figcaption>
-    <figcaption style="color:black;">End-to-end (PaLI): 3800 <span style="color: red;">&#x2718; </span></figcaption>
-    <figcaption style="color:black;">Pipeline (FID): 2430 <span style="color: green;">&#10004;</span></figcaption>
-    </figure>
-  </div>
-</div>
-<div class="edit_grid">
 </div>
 
 <div class="header_dark_gray">
-  <h1> End-to-end vs Two-stage Pipeline </h1>
+  <h1> End-to-end Model vs Two-stage Pipeline Model</h1>
   <center><h5>  We studied End-to-end model (PaLI) vs Pipeline Systems (Entity Recognition + Language QA)</h5></center>
 </div>
 <div style="display:flex; justify-content: center;">
@@ -303,282 +258,329 @@
   </div>
 </div>
 
+<div class="header_dark_gray">
+  <h1>Discovering Pre-trained Visual-Language Models' Strengths and Weaknesses </h1>
+  <center><h5>Good at Surface-level Questions, but Missing Deeper Knowledge</h5></center>
+</div>
 
-    <script type="text/javascript">
-      logo_images = [
-        {"src": "./images/infoseek-images/aircraft.png",
-          "caption": "What is the date this aircraft took the first flight?"},
-        {"src": "./images/infoseek-images/building2.png",
-          "caption": "What country does this building belong to?"},
-        {"src": "./images/infoseek-images/animal.png", "caption": "Which region is this animal exclusively found?"},
-      ];
+<div class="edit_grid">
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/animal.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: Which region is this animal exclusively found?</figcaption>
+    <figcaption style="color:black;">PaLI (end-to-end): U.S.A <span style="color: green;">&#10004;</span></figcaption>
+    <figcaption style="color:black;">FiD (pipeline): Brazil <span style="color: red;">&#x2718; </span></figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/building2.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What country does this building belong to?</figcaption>
+    <figcaption style="color:black;">PaLI (end-to-end): Brazil <span style="color: green;">&#10004;</span></figcaption>
+    <figcaption style="color:black;">FiD (pipeline): United Kingdom <span style="color: red;">&#x2718; </span></figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/aircraft.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What was the date this type of aircraft took the first flight?</figcaption>
+    <figcaption style="color:black;">PaLI (end-to-end): 1955 2 22 <span style="color: red;">&#x2718; </span></figcaption>
+    <figcaption style="color:black;">FiD (pipeline): 1981 September 26 <span style="color: green;">&#10004;</span></figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure>
+      <img src="./images/infoseek-images/building.png" style="width:100%; height:100%; object-fit: cover;">
+      <figcaption>Q: What is the altitude of this building measured at meters above sea level?</figcaption>
+    <figcaption style="color:black;">PaLI (end-to-end): 3800 <span style="color: red;">&#x2718; </span></figcaption>
+    <figcaption style="color:black;">FiD (pipeline): 2430 <span style="color: green;">&#10004;</span></figcaption>
+    </figure>
+  </div>
+</div>
 
-      gallery_images = [
-      {
-        "src": "./images/infoseek-images/aircraft.png",
-        "question": "Q: What is the date this aircraft took the first flight?",
-        "answer": "A: 1981 September 26."
-      },
-      {
-        "src": "./images/infoseek-images/sport.png",
-        "question": "Q: Who is the founder of this sport?",
-        "answer": "A: Kanō Jigorō.",
-      },
-      {
-        "src": "./images/infoseek-images/bird.png",
-        "question": "Q: What is the length of this bird in centimetre?",
-        "answer": "A: 120-170.",
-      },
-      {
-        "src": "./images/infoseek-images/animal.png",
-        "question": "Q: Where is this animal found exclusively?",
-        "answer": "A: USA.",
-      },
-      {
-        "src": "./images/infoseek-images/equipment.png",
-        "question": "Q: Who is the inventor of this object?",
-        "answer": "A: James Gregory.",
-      },
-      {
-        "src": "./images/infoseek-images/dog.png",
-        "question": "Q: What is the country of origin of this animal?",
-        "answer": "A: Rhodesia."
-      },
-      {
-        "src": "./images/infoseek-images/building3.png",
-        "question": "Q: In which year was did this building officially open?",
-        "answer": "A: 1930.",
-      },
-      {
-        "src": "./images/infoseek-images/food.png",
-        "question": "Q: Which year was this food invented?",
-        "answer": "A: 1935.",
-      },
-      {
-        "src": "./images/infoseek-images/lake.png",
-        "question": "Q: Which mountain range is this lake belong to?",
-        "answer": "A: Alp."
-      },
-      {
-        "src": "./images/infoseek-images/piano.png",
-        "question": "Q: What is the highest note this item can play?",
-        "answer": "A: C8.",
-      },
-      {
-        "src": "./images/infoseek-images/building2.png",
-        "question": "Q: Which country does this building belong to?",
-        "answer": "A: Brazil."
-      },
-      {
-        "src": "./images/infoseek-images/plant.png",
-        "question": "Q: Where is this plant native to?",
-        "answer": "A: Ecuador."
-      },
-      ];
+<!-- anon-on -->
+<div class="content">
+  <h1>Special Thanks</h1>
+  <p class="smaller" style="text-align: justify;"> We thank Jialin Wu, Luowei Zhou for reviewing an early version of this paper. We thank Xi Chen for providing different variants of PaLI pre-trained checkpoints. We also thank Radu Soricut, Anelia Angelova, Andre Araujo, Vittorio Ferrari for valuable discussions and feedback on the project. We thank Huiwen Chang and the Muse Team for providing their website template. Yang Chen is partially funded by the NSF (IIS-2052498).
+  </p>
+</div>
+<!-- anon-off -->
 
-      lastCardFlippedIdx = {
-        gallery1: -1,
-      };
 
-      lastCardFlippedLastSwapTime = {
-        gallery1: -1,
-      };
 
-      $(".flipcard").flip({
-        trigger: "manual",
-        reverse: false,
-      });
+<script type="text/javascript">
+  logo_images = [
+    {"src": "./images/infoseek-images/aircraft.png",
+      "caption": "What is the date this aircraft took the first flight?"},
+    {"src": "./images/infoseek-images/building2.png",
+      "caption": "What country does this building belong to?"},
+    {"src": "./images/infoseek-images/animal.png", "caption": "Which region is this animal exclusively found?"},
+  ];
 
-      function checkIfImageIsVisible(name, image) {
-        numCards = $(name + " .flipcard:visible").size();
+  gallery_images = [
+  {
+    "src": "./images/infoseek-images/aircraft.png",
+    "question": "Q: What is the date this aircraft took the first flight?",
+    "answer": "A: 1981 September 26."
+  },
+  {
+    "src": "./images/infoseek-images/sport.png",
+    "question": "Q: Who is the founder of this sport?",
+    "answer": "A: Kanō Jigorō.",
+  },
+  {
+    "src": "./images/infoseek-images/bird.png",
+    "question": "Q: What is the length of this bird in centimetre?",
+    "answer": "A: 120-170.",
+  },
+  {
+    "src": "./images/infoseek-images/animal.png",
+    "question": "Q: Where is this animal found exclusively?",
+    "answer": "A: USA.",
+  },
+  {
+    "src": "./images/infoseek-images/equipment.png",
+    "question": "Q: Who is the inventor of this object?",
+    "answer": "A: James Gregory.",
+  },
+  {
+    "src": "./images/infoseek-images/dog.png",
+    "question": "Q: What is the country of origin of this animal?",
+    "answer": "A: Rhodesia."
+  },
+  {
+    "src": "./images/infoseek-images/building3.png",
+    "question": "Q: In which year did this building officially open?",
+    "answer": "A: 1930.",
+  },
+  {
+    "src": "./images/infoseek-images/food.png",
+    "question": "Q: Who is the inventor of this food?",
+    "answer": "A: Aidu-ya.",
+  },
+  {
+    "src": "./images/infoseek-images/lake.png",
+    "question": "Q: Which mountain range is this lake belong to?",
+    "answer": "A: Alp."
+  },
+  {
+    "src": "./images/infoseek-images/piano.png",
+    "question": "Q: What is the highest note this item can play?",
+    "answer": "A: C8.",
+  },
+  {
+    "src": "./images/infoseek-images/building2.png",
+    "question": "Q: Which country does this building belong to?",
+    "answer": "A: Brazil."
+  },
+  {
+    "src": "./images/infoseek-images/plant.png",
+    "question": "Q: Where is this plant native to?",
+    "answer": "A: Ecuador."
+  },
+  ];
 
-        for (var cardIdx = 0; cardIdx < numCards; ++cardIdx) {
-          var isFlipped = $(name + " #fig" + cardIdx).data("flip-model").isFlipped;
-          if (!isFlipped) {
-            src = $(name + " #fig" + cardIdx + " div.front figure img").attr("src")
-          } else {
-            src = $(name + " #fig" + cardIdx + " div.back figure img").attr("src")
-          }
+  lastCardFlippedIdx = {
+    gallery1: -1,
+  };
 
-          if (image.src == src) {
-            return true;
-          }
-        }
-        return false;
+  lastCardFlippedLastSwapTime = {
+    gallery1: -1,
+  };
+
+  $(".flipcard").flip({
+    trigger: "manual",
+    reverse: false,
+  });
+
+  function checkIfImageIsVisible(name, image) {
+    numCards = $(name + " .flipcard:visible").size();
+
+    for (var cardIdx = 0; cardIdx < numCards; ++cardIdx) {
+      var isFlipped = $(name + " #fig" + cardIdx).data("flip-model").isFlipped;
+      if (!isFlipped) {
+        src = $(name + " #fig" + cardIdx + " div.front figure img").attr("src")
+      } else {
+        src = $(name + " #fig" + cardIdx + " div.back figure img").attr("src")
       }
 
-      function getNextImage(name) {
-        // different galleries have different sources of imagery.
-        img_src = gallery_images;
-        while (true) {
-          randomImageIdx = Math.floor(Math.random() * img_src.length);
-          if (!checkIfImageIsVisible(name, img_src[randomImageIdx])) {
-            return img_src[randomImageIdx];
-          }
-        }
+      if (image.src == src) {
+        return true;
       }
+    }
+    return false;
+  }
 
-      function randomSwapImageWithId(name, randomCardIdx) {
-        numCards = $(name + " .flipcard:visible").size();
-
-        image = getNextImage(name);
-
-        const d = new Date();
-        let currentTime = d.getTime();
-        lastCardFlippedIdx[name] = randomCardIdx;
-        lastCardFlippedLastSwapTime[name] = currentTime;
-
-        var isFlipped = $(name + " #fig" + randomCardIdx).data("flip-model").isFlipped;
-        if (!isFlipped) {
-          $(name + " #fig" + randomCardIdx + " div.back figure img").attr("src", image.src)
-          $(name + " #fig" + randomCardIdx + " div.back figure figcaption.question").text(image.question)
-          $(name + " #fig" + randomCardIdx + " div.back figure figcaption.answer").text(image.answer)
-        } else {
-          $(name + " #fig" + randomCardIdx + " div.front figure img").attr("src", image.src)
-          $(name + " #fig" + randomCardIdx + " div.front figure figcaption.question").text(image.question)
-          $(name + " #fig" + randomCardIdx + " div.front figure figcaption.answer").text(image.answer)
-        }
-
-        $(name + " #fig" + randomCardIdx).flip("toggle");
+  function getNextImage(name) {
+    // different galleries have different sources of imagery.
+    img_src = gallery_images;
+    while (true) {
+      randomImageIdx = Math.floor(Math.random() * img_src.length);
+      if (!checkIfImageIsVisible(name, img_src[randomImageIdx])) {
+        return img_src[randomImageIdx];
       }
+    }
+  }
 
-      function randomSwapImage(name) {
-        numCards = $(name + " .flipcard:visible").size();
+  function randomSwapImageWithId(name, randomCardIdx) {
+    numCards = $(name + " .flipcard:visible").size();
 
-        const d = new Date();
-        if (d.getTime() - lastCardFlippedIdx[name] < 5000) {
-          setTimeout(randomSwapImage, 1000, name);
-          return;
-        }
+    image = getNextImage(name);
 
-        do {
-          randomCardIdx = Math.floor(Math.random() * numCards);
-          if (numCards == 1) {
-            break;
-          }
-        } while (randomCardIdx == lastCardFlippedIdx[name]);
+    const d = new Date();
+    let currentTime = d.getTime();
+    lastCardFlippedIdx[name] = randomCardIdx;
+    lastCardFlippedLastSwapTime[name] = currentTime;
 
-        randomSwapImageWithId(name, randomCardIdx);
-        setTimeout(randomSwapImage, 3000, name);
+    var isFlipped = $(name + " #fig" + randomCardIdx).data("flip-model").isFlipped;
+    if (!isFlipped) {
+      $(name + " #fig" + randomCardIdx + " div.back figure img").attr("src", image.src)
+      $(name + " #fig" + randomCardIdx + " div.back figure figcaption.question").text(image.question)
+      $(name + " #fig" + randomCardIdx + " div.back figure figcaption.answer").text(image.answer)
+    } else {
+      $(name + " #fig" + randomCardIdx + " div.front figure img").attr("src", image.src)
+      $(name + " #fig" + randomCardIdx + " div.front figure figcaption.question").text(image.question)
+      $(name + " #fig" + randomCardIdx + " div.front figure figcaption.answer").text(image.answer)
+    }
+
+    $(name + " #fig" + randomCardIdx).flip("toggle");
+  }
+
+  function randomSwapImage(name) {
+    numCards = $(name + " .flipcard:visible").size();
+
+    const d = new Date();
+    if (d.getTime() - lastCardFlippedIdx[name] < 5000) {
+      setTimeout(randomSwapImage, 1000, name);
+      return;
+    }
+
+    do {
+      randomCardIdx = Math.floor(Math.random() * numCards);
+      if (numCards == 1) {
+        break;
       }
+    } while (randomCardIdx == lastCardFlippedIdx[name]);
 
-      function setupGallery1(id) {
+    randomSwapImageWithId(name, randomCardIdx);
+    setTimeout(randomSwapImage, 3000, name);
+  }
+
+  function setupGallery1(id) {
+        randomSwapImageWithId("#gallery1", id);
+        $("#gallery1 #fig" + id).click(
+          function() {
             randomSwapImageWithId("#gallery1", id);
-            $("#gallery1 #fig" + id).click(
-              function() {
-                randomSwapImageWithId("#gallery1", id);
-              }
-            );
-      }
-      for (id = 0; id < 8; id ++) {
-            setupGallery1(id);
-      }
-
-      setTimeout(randomSwapImage, 1000, "#gallery1");
-    </script>
-
-   
-    <script type="text/javascript">
-      compositionalAnimalsManualClicked = false;
-      compositionalMadeOfManualClicked = false;
-
-      comp_files = {
-        "Original (with mask)": "./images/inpaint/boston_masked.jpg",
-        "\"New York in the background\"": "./images/inpaint/boston_nyc.jpg",
-        "\"Paris in the background\"": "./images/inpaint/boston_paris.jpg",
-        "\"San Francisco in the background\"": "./images/inpaint/boston_sf.jpg"
-      }
-
-      function updateComposition(name) {
-        var compositionSpans = $(name + " p span.selected").map(function() {
-          return $(this).text();
-        }).get();
-        var compositionText = "";
-        for (var compositionSpansIdx = 0; compositionSpansIdx < compositionSpans.length; ++compositionSpansIdx) {
-          if (compositionSpansIdx > 0) {
-            compositionText += " ";
           }
-          compositionText += compositionSpans[compositionSpansIdx];
-        }
-        if (name == "#compositional_madeof") {
-          if (compositionText == "Original") {
-            $(name + "_img").attr("src", "./images/edit_opt/orig.gif")
-          } else {
-            // Generate a random index that is not the one already selected
-            randImgIdx = "/"; // something guaranteed to be in the path
-            cur_src = $(name + "_img").attr("src");
-            while (cur_src.search(randImgIdx) != -1) {
-              randImgIdx = Math.floor(Math.random() * 4);
-            }
-            first_space = compositionText.search(" ");
-            file = compositionText.slice(first_space + 1, -2).replaceAll(" ", "-");
-            $(name + "_img").attr("src", "./images/edit_opt/" + file + "_" + randImgIdx + ".gif")
-          }
-        } else if (name == "#compositional_animals") {
+        );
+  }
+  for (id = 0; id < 8; id ++) {
+        setupGallery1(id);
+  }
+
+  setTimeout(randomSwapImage, 1000, "#gallery1");
+</script>
+
+<script type="text/javascript">
+  compositionalAnimalsManualClicked = false;
+  compositionalMadeOfManualClicked = false;
+
+  comp_files = {
+    "Original (with mask)": "./images/inpaint/boston_masked.jpg",
+    "\"New York in the background\"": "./images/inpaint/boston_nyc.jpg",
+    "\"Paris in the background\"": "./images/inpaint/boston_paris.jpg",
+    "\"San Francisco in the background\"": "./images/inpaint/boston_sf.jpg"
+  }
+
+  function updateComposition(name) {
+    var compositionSpans = $(name + " p span.selected").map(function() {
+      return $(this).text();
+    }).get();
+    var compositionText = "";
+    for (var compositionSpansIdx = 0; compositionSpansIdx < compositionSpans.length; ++compositionSpansIdx) {
+      if (compositionSpansIdx > 0) {
+        compositionText += " ";
+      }
+      compositionText += compositionSpans[compositionSpansIdx];
+    }
+    if (name == "#compositional_madeof") {
+      if (compositionText == "Original") {
+        $(name + "_img").attr("src", "./images/edit_opt/orig.gif")
+      } else {
+        // Generate a random index that is not the one already selected
+        randImgIdx = "/"; // something guaranteed to be in the path
+        cur_src = $(name + "_img").attr("src");
+        while (cur_src.search(randImgIdx) != -1) {
           randImgIdx = Math.floor(Math.random() * 4);
-          $(name + "_img").attr("src", comp_files[compositionText]);
         }
+        first_space = compositionText.search(" ");
+        file = compositionText.slice(first_space + 1, -2).replaceAll(" ", "-");
+        $(name + "_img").attr("src", "./images/edit_opt/" + file + "_" + randImgIdx + ".gif")
       }
+    } else if (name == "#compositional_animals") {
+      randImgIdx = Math.floor(Math.random() * 4);
+      $(name + "_img").attr("src", comp_files[compositionText]);
+    }
+  }
 
-      function randomComposition(name) {
-        if (name == "#compositional_animals" && compositionalAnimalsManualClicked == true) {
-          compositionalAnimalsManualClicked = false;
-          setTimeout(randomComposition, 4000, name);
-          return;
-        } else if (name == "#compositional_madeof" &&
-                   compositionalMadeOfManualClicked == true) {
-          compositionalMadeOfManualClicked = false;
-          setTimeout(randomComposition, 4000, name);
-          return;
-        }
+  function randomComposition(name) {
+    if (name == "#compositional_animals" && compositionalAnimalsManualClicked == true) {
+      compositionalAnimalsManualClicked = false;
+      setTimeout(randomComposition, 4000, name);
+      return;
+    } else if (name == "#compositional_madeof" &&
+               compositionalMadeOfManualClicked == true) {
+      compositionalMadeOfManualClicked = false;
+      setTimeout(randomComposition, 4000, name);
+      return;
+    }
 
-        var compositionPs = $(name + " p.selectable").toArray();
-        var compositionOptions = [];
-        for (var i = 0; i < compositionPs.length; ++i) {
-          var compositionSpanSelected = $(compositionPs[i]).children("span.selected");
-          var compositionSpans = $(compositionPs[i]).children("span").not("span.selected").toArray();
-          for (var j = 0; j < compositionSpans.length; ++j) {
-            compositionOption = {
-              "p": compositionPs[i],
-              "span_selected": compositionSpanSelected,
-              "span_option": $(compositionSpans[j])
-            };
-            compositionOptions.push(compositionOption);
-          }
-        }
-
-        randomCompositionOptionIdx = Math.floor(Math.random() * compositionOptions.length);
-        randomCompositionOption = compositionOptions[randomCompositionOptionIdx];
-
-        randomCompositionOption.span_selected.toggleClass("selected");
-        randomCompositionOption.span_option.toggleClass("selected");
-
-        updateComposition(name);
-        setTimeout(randomComposition, 4000, name);
+    var compositionPs = $(name + " p.selectable").toArray();
+    var compositionOptions = [];
+    for (var i = 0; i < compositionPs.length; ++i) {
+      var compositionSpanSelected = $(compositionPs[i]).children("span.selected");
+      var compositionSpans = $(compositionPs[i]).children("span").not("span.selected").toArray();
+      for (var j = 0; j < compositionSpans.length; ++j) {
+        compositionOption = {
+          "p": compositionPs[i],
+          "span_selected": compositionSpanSelected,
+          "span_option": $(compositionSpans[j])
+        };
+        compositionOptions.push(compositionOption);
       }
+    }
 
-      $("#compositional_animals p.selectable span").click(function() {
-        $(this).siblings().removeClass("selected");
-        $(this).addClass("selected");
-        updateComposition("#compositional_animals");
-        compositionalAnimalsManualClicked = true;
-      });
-      $("#compositional_madeof_img").click(function() {
-        updateComposition("#compositional_madeof");
-        compositionalAnimalsManualClicked = true;
-      });
+    randomCompositionOptionIdx = Math.floor(Math.random() * compositionOptions.length);
+    randomCompositionOption = compositionOptions[randomCompositionOptionIdx];
 
-      $("#compositional_madeof p.selectable span").click(function() {
-        $(this).siblings().removeClass("selected");
-        $(this).addClass("selected");
-        updateComposition("#compositional_madeof");
-        compositionalMadeOfManualClicked = true;
-      });
+    randomCompositionOption.span_selected.toggleClass("selected");
+    randomCompositionOption.span_option.toggleClass("selected");
 
-      <!-- setTimeout(randomComposition, 2000, "#compositional_animals"); -->
-      <!-- setTimeout(randomComposition, 4000, "#compositional_madeof"); -->
-    </script>
+    updateComposition(name);
+    setTimeout(randomComposition, 4000, name);
+  }
 
-    <script src="bootstrap.bundle.min.js"></script>
+  $("#compositional_animals p.selectable span").click(function() {
+    $(this).siblings().removeClass("selected");
+    $(this).addClass("selected");
+    updateComposition("#compositional_animals");
+    compositionalAnimalsManualClicked = true;
+  });
+  $("#compositional_madeof_img").click(function() {
+    updateComposition("#compositional_madeof");
+    compositionalAnimalsManualClicked = true;
+  });
+
+  $("#compositional_madeof p.selectable span").click(function() {
+    $(this).siblings().removeClass("selected");
+    $(this).addClass("selected");
+    updateComposition("#compositional_madeof");
+    compositionalMadeOfManualClicked = true;
+  });
+
+  <!-- setTimeout(randomComposition, 2000, "#compositional_animals"); -->
+  <!-- setTimeout(randomComposition, 4000, "#compositional_madeof"); -->
+</script>
+<script src="bootstrap.bundle.min.js"></script>
   </body>
 </html>
