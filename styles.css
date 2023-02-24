@@ -241,9 +241,6 @@ div.limitations div.inside p.text {
   text-align: justify;
 }
 
-a.read-paper {
-
-}
 
 a.read-paper button:hover {
   background-color: rgb(26, 26, 26);
@@ -424,6 +421,7 @@ a.read-paper button:hover {
   }
 
   div.authors {
+    font-size: 0.75em;
     padding: 25px 25px;
   }
 
@@ -679,12 +677,22 @@ a.read-paper button:hover {
   }
 
   a.read-paper button {
-    width: 140px;
-    padding: 10px;
+    width: 150px;
+    padding: 5px;
     background: none;
     font: inherit;
     border: 1px solid white;
     color: white;
+    border-radius: 4px;
+  }
+
+  a.dataset button {
+    width: 200px;
+    padding: 5px;
+    background: none;
+    font: inherit;
+    border: 1px solid white;
+    color: #fff7bc;
     border-radius: 4px;
   }
 }
@@ -1097,12 +1105,12 @@ a.read-paper button:hover {
   }
 
   a.dataset button {
-    width: 200px;
+    width: 250px;
     height: 50px;
     background: none;
     font: inherit;
     border: 1px solid white;
-    color: white;
+    color: #fff7bc;
     border-radius: 4px;
   }
 }
