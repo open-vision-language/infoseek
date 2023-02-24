@@ -23,65 +23,51 @@
 
     <title>Can Pre-trained Vision and Language Models Answer Visual Information-seeking Questions?</title>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8HJZTYJKX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-V8HJZTYJKX');
-  </script>
   <body>
-
-      <!-- <div style="display:flex; justify-content: center;">
-        <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/building3.png" style="width:100%; height:100%; object-fit: cover;">
-          <figcaption>Which year was this building built?</figcaption>
-        </figure>
-        <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/plant.png" style="width:100%; height:100%; object-fit: cover;">
-          <figcaption>Where is this plant native to?</figcaption>
-        </figure>
-        <figure style="width:15%; padding:5px;">
-          <img src="./images/infoseek-images/dog.png" style="width:100%; height:100%; object-fit: cover;">
-          <figcaption>What is the country of origin of this animal?</figcaption>
-        </figure>
-      </div>
-       -->
-
-    <div id="gallery0" style="padding-top: 50px; padding-bottom: 50px; background-color: rgb(245,245,245);">
-      <center>
-      <div class="flipcard" id="fig0">
-        <div class="front">
-          <figure>
-            <img src="./images/infoseek-images/building3.png" style="width: 100%; height: 100%; max-width: 250px; max-height: 200px;">
-            <figcaption>Which year was this building built?</figcaption>
-          </figure>
-        </div>
-        <div class="back">
-          <figure>
-            <img src="./images/infoseek-images/dog.png"  style="width: 100%; height: 100%; max-width: 250px; max-height: 200px;">
-            <figcaption>What is the country of origin of this animal?</figcaption>
-          </figure>
-        </div>
-      </div>
-      </center>
-    
+    <div id="gallery0" style="padding-top: 50px; padding-bottom: 50px; background-color: rgb(245,245,245);"> 
       
       <h2 style="text-align: center;">Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?</h2>
-    <!-- anon-on -->
-    <div class="authors">      
-      <p>Yang Chen<sup>*</sup>, Hexiang Hu, Luan Yi, Haitian Sun, Soravit Changpinyo</p>
-      <p>Alan Ritter<sup>*</sup>, Ming-Wei Chang</p>
-      <!-- <p class="tiny"><sup>*</sup>Georgia Institute of Technology</p> -->
-      <center><img src="https://research.google/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research" height=25> <img src="https://brand.gatech.edu/sites/default/files/inline-images/extended-RGB.png" alt="Georgia Tech" height=40><sup>*</sup></center>
+      <!-- anon-on -->
+      <div class="authors text-center">
+        <div class="row">
+          <div class="col">Yang Chen<sup>1,2*</sup></div>
+          <div class="col">Hexiang Hu<sup>1</sup></div>
+          <div class="col">Yi Luan<sup>1</sup></div>
+          <div class="col">Haitian Sun<sup>1</sup></div>
+        </div>
+        <div class="row">
+          <div class="col">Soravit Changpinyo<sup>1</sup></div>
+          <div class="col">Alan Ritter<sup>2</sup></div>
+          <div class="col">Ming-Wei Chang<sup>1</sup></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <sup>1</sup><img src="https://research.google/static/images/google_research_lockup-121987c06c0aa0ab26ca8716a0f2e7945d1cbf82077bbab9f914dac0a0bf099f.svg" alt="Google Research" height=25>
+          </div>
+          <div class="col">
+            <sup>2</sup><img src="https://brand.gatech.edu/sites/default/files/inline-images/extended-RGB.png" alt="Georgia Tech" height=35>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-small">(*: Work done when author was interned at Google Research)</div>
+        </div>
+      </div>
+      <!-- anon-off -->
     </div>
-    <!-- anon-off -->
-  </div>
-    <div class="header_dark_gray">
-      <h1><i>InfoSeek</i>, A New Benchmark for Visual Info-Seeking Questions </h1>
-      <center><h5>Asking Questions about Something You Don't Know </h5></center>
+    <div class="header_dark_gray text-center">
+      <h1><i>InfoSeek</i>, A New VQA Benchmark focus on Visual Info-Seeking Questions </h1>
+    </div>
+
+    <div class="abstract">
+      <div class="inside">
+        <p class="text">
+        Large language models have demonstrated an emergent capability in answering knowledge intensive questions. With recent progress on web-scale visual and language pre-training, do these models also understand how to answer visual information seeking questions? To answer this question, we present <i>InfoSeek</i>, a Visual Question Answering dataset that focuses on asking information-seeking questions, where the information can not be answered by common sense knowledge. We perform a multi-stage human annotation to collect a natural distribution of high-quality visual information seeking question-answer pairs. We also construct a large-scale, automatically collected dataset by combining existing visual entity recognition datasets and Wikidata, which provides over one million examples for model fine-tuning and validation. Based on InfoSeek, we analyzed various pre-trained Visual QA systems to gain insights into the characteristics of different pre-trained models.
+        </p>
+        <!-- anon-on -->
+        <a class="read-paper" href="https://arxiv.org/abs/2302.11713"><button>Research Paper</button></a>
+        <a class="read-paper" href="", style="_blank"><button>Data (Coming Soon)</button></a>
+        <!-- anon-off -->
+      </div>
     </div>
 
     <div class="image_8" id="gallery1">
@@ -89,16 +75,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/food.png">
-            <figcaption>Q: Which year was this food first created?</figcaption>
-            <figcaption>A: 0000</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption>.</figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -106,16 +91,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/sport.png"> -->
-            <!-- <figcaption>Q: Who is the founder of this sport?</figcaption> -->
-            <!-- <figcaption>A: Kanō Jigorō</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img />
-            <figcaption />
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -123,16 +107,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/bird.png">
-            <figcaption>Q: What is the length of this bird in centimetres?</figcaption> -->
-            <!-- <figcaption>A: 120 - 170</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption></figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -140,17 +123,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/equipment.png">
-            <figcaption>Q: Who is the inventor of this object?</figcaption> -->
-            <!-- <figcaption>A: James Gregory</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <figcaption>A cake made of macarons in a heart shape.</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -158,15 +139,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/drink.png">
-            <figcaption>Q: What culture first made this type of spirit?</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption>.</figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -174,15 +155,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/car.png">
-            <figcaption>Q: What year did they stop pruduction of this car?</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption></figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -190,15 +171,15 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/insect.png">
-            <figcaption>Q: Which year were these insects first discovered?</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption>.</figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
@@ -206,26 +187,19 @@
         <div class="front">
           <figure>
             <img>
-            <figcaption></figcaption>
-            <!-- <img src="./images/infoseek-images/fish.png">
-            <figcaption>Q: Who named these fishes?</figcaption> -->
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
         <div class="back">
           <figure>
             <img>
-            <figcaption></figcaption>
+            <figcaption class="question"></figcaption>
+            <figcaption class="answer"></figcaption>
           </figure>
         </div>
       </div>
     </div>
-<!-- 
-    <div class="abstract">
-      <div class="inside">
-        <a class="read-paper" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Research Paper</button></a>
-        <a class="dataset" href="https://arxiv.org/abs/2301.00704", style="_blank"><button>Download Data</button></a>
-      </div>
-    </div> -->
 
     <div class="content1">
       <div>
@@ -236,12 +210,16 @@
           <li>Pre-trained visual-language models have unique advantage but missing deeper knowledge</li>
         </ul>
       </div>
+<<<<<<< HEAD
       <div>
         <a class="read-paper" href="https://arxiv.org/abs/2302.11713", style="_blank"><button>Research Paper</button></a>
         <a class="read-paper" href="", style="_blank"><button>Download Data</button></a>
       </div>
 
   </div>
+=======
+    </div>
+>>>>>>> 9d6a22305a1d1b27fea29d7b71ac00f1403bdc7f
 
 
   <div class="header_dark_gray">
@@ -271,13 +249,6 @@
   </div>
   <div class="edit_grid">
   </div>
-
-    <!-- <figure style="width:20%; padding:5px;">
-      <img src="./images/real-world/shoes.png" style="width:100%; object-fit: cover;">
-      <figcaption>Q: Who is the designer of these shoes?</figcaption>
-      <figcaption style="color:black;">PaLI: Nicolas Ghesquiere <span style="color: red;">&#9083;</span></figcaption>
-    </figure>
-  </div> -->
 </div>
 
 </div>
@@ -352,6 +323,7 @@
       ];
 
       gallery_images = [
+<<<<<<< HEAD
       {"src": "./images/infoseek-images/aircraft.png", "caption": "What is the date this aircraft took the first flight? (1981 September 26)"},
       {"src": "./images/infoseek-images/sport.png", "caption": "Who is the founder of this sport? (Kanō Jigorō)"},
       {"src": "./images/infoseek-images/bird.png", "caption": "What is the length of this bird in centimetre? (120-170)"},
@@ -368,15 +340,75 @@
       {"src": "./images/infoseek-images/insect.png", "caption": "Which year was this insect first discovered? (Test set)"},
       {"src": "./images/infoseek-images/fish.png", "caption": "Who named these fishes? (Test set)"},
       {"src": "./images/infoseek-images/drink.png", "caption": "What culture first made this type of spirit? (Test set)"}
+=======
+      {
+        "src": "./images/infoseek-images/aircraft.png",
+        "question": "Q: What is the date this aircraft took the first flight?",
+        "answer": "A: 1981 September 26."
+      },
+      {
+        "src": "./images/infoseek-images/sport.png",
+        "question": "Q: Who is the founder of this sport?",
+        "answer": "A: Kanō Jigorō.",
+      },
+      {
+        "src": "./images/infoseek-images/bird.png",
+        "question": "Q: What is the length of this bird in centimetre?",
+        "answer": "A: 120-170.",
+      },
+      {
+        "src": "./images/infoseek-images/animal.png",
+        "question": "Q: Where is this animal found exclusively?",
+        "answer": "A: USA.",
+      },
+      {
+        "src": "./images/infoseek-images/equipment.png",
+        "question": "Q: Who is the inventor of this object?",
+        "answer": "A: James Gregory.",
+      },
+      {
+        "src": "./images/infoseek-images/dog.png",
+        "question": "Q: What is the country of origin of this animal?",
+        "answer": "A: Rhodesia."
+      },
+      {
+        "src": "./images/infoseek-images/building3.png",
+        "question": "Q: In which year was did this building officially open?",
+        "answer": "A: 1930.",
+      },
+      {
+        "src": "./images/infoseek-images/food.png",
+        "question": "Q: Who is the inventor of this food?",
+        "answer": "A: Aidu-ya.",
+      },
+      {
+        "src": "./images/infoseek-images/lake.png",
+        "question": "Q: Which mountain range is this lake belong to?",
+        "answer": "A: Alp."
+      },
+      {
+        "src": "./images/infoseek-images/piano.png",
+        "question": "Q: What is the highest note this item can play?",
+        "answer": "A: C8.",
+      },
+      {
+        "src": "./images/infoseek-images/building2.png",
+        "question": "Q: Which country does this building belong to?",
+        "answer": "A: Brazil."
+      },
+      {
+        "src": "./images/infoseek-images/plant.png",
+        "question": "Q: Where is this plant native to?",
+        "answer": "A: Ecuador."
+      },
+>>>>>>> 9d6a22305a1d1b27fea29d7b71ac00f1403bdc7f
       ];
 
       lastCardFlippedIdx = {
-        gallery0: -1,
         gallery1: -1,
       };
 
       lastCardFlippedLastSwapTime = {
-        gallery0: -1,
         gallery1: -1,
       };
 
@@ -405,11 +437,7 @@
 
       function getNextImage(name) {
         // different galleries have different sources of imagery.
-        if (name == "#gallery0") {
-            img_src = logo_images;
-        } else {
-            img_src = gallery_images;
-        }
+        img_src = gallery_images;
         while (true) {
           randomImageIdx = Math.floor(Math.random() * img_src.length);
           if (!checkIfImageIsVisible(name, img_src[randomImageIdx])) {
@@ -431,10 +459,12 @@
         var isFlipped = $(name + " #fig" + randomCardIdx).data("flip-model").isFlipped;
         if (!isFlipped) {
           $(name + " #fig" + randomCardIdx + " div.back figure img").attr("src", image.src)
-          $(name + " #fig" + randomCardIdx + " div.back figure figcaption").text(image.caption)
+          $(name + " #fig" + randomCardIdx + " div.back figure figcaption.question").text(image.question)
+          $(name + " #fig" + randomCardIdx + " div.back figure figcaption.answer").text(image.answer)
         } else {
           $(name + " #fig" + randomCardIdx + " div.front figure img").attr("src", image.src)
-          $(name + " #fig" + randomCardIdx + " div.front figure figcaption").text(image.caption)
+          $(name + " #fig" + randomCardIdx + " div.front figure figcaption.question").text(image.question)
+          $(name + " #fig" + randomCardIdx + " div.front figure figcaption.answer").text(image.answer)
         }
 
         $(name + " #fig" + randomCardIdx).flip("toggle");
@@ -459,7 +489,6 @@
         randomSwapImageWithId(name, randomCardIdx);
         setTimeout(randomSwapImage, 3000, name);
       }
-      setTimeout(randomSwapImage, 6000, "#gallery0");
 
       function setupGallery1(id) {
             randomSwapImageWithId("#gallery1", id);
@@ -472,11 +501,6 @@
       for (id = 0; id < 8; id ++) {
             setupGallery1(id);
       }
-      $("#gallery0 #fig0").click(
-        function() {
-          randomSwapImageWithId("#gallery0", 0);
-        }
-      );
 
       setTimeout(randomSwapImage, 1000, "#gallery1");
     </script>
