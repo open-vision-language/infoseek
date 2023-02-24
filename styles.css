@@ -10,6 +10,13 @@ a {
   text-decoration: none;
 }
 
+img.thumbnail {
+  width: 90%;
+  padding: 0px;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+}
 
 div.edit_grid {
   text-align: left;
@@ -212,7 +219,7 @@ div.authors p {
 }
 
 div.abstract {
-  background-color: rgb(64, 64, 64);
+  background-color: rgb(26, 26, 26);
   color: rgb(255, 255, 255);
 }
 
@@ -833,7 +840,7 @@ a.read-paper button:hover {
   }
 
   div.authors {
-    padding: 50px 100px;
+    padding: 50px 100px 10px 50px;
     font-size: 1.5em;
   }
 
