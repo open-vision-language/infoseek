@@ -200,7 +200,8 @@ div.compositional div.text span.selected:hover {
 div.authors {
   /* background-color: rgb(26, 26, 26); */
   background-color: rgb(245, 245, 245);
-  color: rgb(35, 35, 35);
+  color: #252525;
+  font-size: 2em;
 }
 
 div.authors p {
