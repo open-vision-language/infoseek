@@ -61,7 +61,7 @@
           <div class="col text-small">(*: Work done when author was interned at Google Research)</div>
         </div>
         <div class="row mt-0 nomobile">
-          <center><a href="https://arxiv.org/abs/2302.11713"><img class="thumbnail" src="images/infoseek_thumbnail.png"></a></center>
+          <center><a href="https://arxiv.org/abs/2302.11713"><img class="thumbnail" src="assets/infoseek_thumbnail.png"></a></center>
         </div>
       </div>
       <!-- anon-off -->
@@ -227,62 +227,62 @@
 <script type="text/javascript">
   gallery_images = [
   {
-    "src": "./images/infoseek-images/aircraft.png",
+    "src": "assets/infoseek-images/aircraft.png",
     "question": "Q: What is the date this aircraft took the first flight?",
     "answer": "A: 1981 September 26."
   },
   {
-    "src": "./images/infoseek-images/sport.png",
+    "src": "assets/infoseek-images/sport.png",
     "question": "Q: Who is the founder of this sport?",
     "answer": "A: Kanō Jigorō.",
   },
   {
-    "src": "./images/infoseek-images/bird.png",
+    "src": "assets/infoseek-images/bird.png",
     "question": "Q: What is the length of this bird in centimetre?",
     "answer": "A: 120-170.",
   },
   {
-    "src": "./images/infoseek-images/animal.png",
+    "src": "assets/infoseek-images/animal.png",
     "question": "Q: Where is this animal found exclusively?",
     "answer": "A: USA.",
   },
   {
-    "src": "./images/infoseek-images/equipment.png",
+    "src": "assets/infoseek-images/equipment.png",
     "question": "Q: Who is the inventor of this object?",
     "answer": "A: James Gregory.",
   },
   {
-    "src": "./images/infoseek-images/dog.png",
+    "src": "assets/infoseek-images/dog.png",
     "question": "Q: What is the country of origin of this animal?",
     "answer": "A: Rhodesia."
   },
   {
-    "src": "./images/infoseek-images/building3.png",
+    "src": "assets/infoseek-images/building3.png",
     "question": "Q: In which year did this building officially open?",
     "answer": "A: 1930.",
   },
   {
-    "src": "./images/infoseek-images/food.png",
+    "src": "assets/infoseek-images/food.png",
     "question": "Q: Which year was this food invented?",
     "answer": "A: 1935.",
   },
   {
-    "src": "./images/infoseek-images/lake.png",
+    "src": "assets/infoseek-images/lake.png",
     "question": "Q: Which mountain range does this lake belong to?",
     "answer": "A: Alp."
   },
   {
-    "src": "./images/infoseek-images/piano.png",
+    "src": "assets/infoseek-images/piano.png",
     "question": "Q: What is the highest note this item can play?",
     "answer": "A: C8.",
   },
   {
-    "src": "./images/infoseek-images/building2.png",
+    "src": "assets/infoseek-images/building2.png",
     "question": "Q: Which country does this building belong to?",
     "answer": "A: Brazil."
   },
   {
-    "src": "./images/infoseek-images/plant.png",
+    "src": "assets/infoseek-images/plant.png",
     "question": "Q: Where is this plant native to?",
     "answer": "A: Ecuador."
   },
@@ -394,10 +394,10 @@
   compositionalMadeOfManualClicked = false;
 
   comp_files = {
-    "Original (with mask)": "./images/inpaint/boston_masked.jpg",
-    "\"New York in the background\"": "./images/inpaint/boston_nyc.jpg",
-    "\"Paris in the background\"": "./images/inpaint/boston_paris.jpg",
-    "\"San Francisco in the background\"": "./images/inpaint/boston_sf.jpg"
+    "Original (with mask)": "assets/inpaint/boston_masked.jpg",
+    "\"New York in the background\"": "assets/inpaint/boston_nyc.jpg",
+    "\"Paris in the background\"": "assets/inpaint/boston_paris.jpg",
+    "\"San Francisco in the background\"": "assets/inpaint/boston_sf.jpg"
   }
 
   function updateComposition(name) {
@@ -413,7 +413,7 @@
     }
     if (name == "#compositional_madeof") {
       if (compositionText == "Original") {
-        $(name + "_img").attr("src", "./images/edit_opt/orig.gif")
+        $(name + "_img").attr("src", "assets/edit_opt/orig.gif")
       } else {
         // Generate a random index that is not the one already selected
         randImgIdx = "/"; // something guaranteed to be in the path
@@ -423,7 +423,7 @@
         }
         first_space = compositionText.search(" ");
         file = compositionText.slice(first_space + 1, -2).replaceAll(" ", "-");
-        $(name + "_img").attr("src", "./images/edit_opt/" + file + "_" + randImgIdx + ".gif")
+        $(name + "_img").attr("src", "assets/edit_opt/" + file + "_" + randImgIdx + ".gif")
       }
     } else if (name == "#compositional_animals") {
       randImgIdx = Math.floor(Math.random() * 4);
