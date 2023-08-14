@@ -4,9 +4,7 @@
 
 [Yang Chen](https://edchengg.github.io/), [Hexiang Hu](https://www.hexianghu.com/), [Yi Luan](https://luanyi.github.io/), [Haitian Sun](https://scholar.google.com/citations?user=opSHsTQAAAAJ&hl=en), [Soravit Changpinyo](https://schangpi.github.io/), [Alan Ritter](http://aritter.github.io/index.html) and [Ming-Wei Chang](https://mingweichang.org/).
 
-
-- [[Project Page]](https://open-vision-language.github.io/infoseek/) [[Paper]](https://arxiv.org/abs/2302.11713)
-[[Annotation]](#infoseek-annotation) [[Images]](#infoseek-images) [[Contributed Code]](https://github.com/edchengg/infoseek_eval) [[Leaderboard (Coming Soon)]]()
+[[Project Page]](https://open-vision-language.github.io/infoseek/) [[Annotation]](#infoseek-annotation) [[Images]](#infoseek-images) [[Contributed Code]](https://github.com/edchengg/infoseek_eval) [[Leaderboard (Coming Soon)]]()
 
 <p align="center">
     <img src="assets/infoseek.jpg" width="100%"> <br>
