@@ -1,6 +1,6 @@
 # Dataset Release Page for InfoSeek
 
-**[Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?](https://arxiv.org/abs/2302.11713)**
+**[Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?](https://arxiv.org/abs/2302.11713) (EMNLP 2023)**
 
 [Yang Chen](https://edchengg.github.io/), [Hexiang Hu](https://www.hexianghu.com/), [Yi Luan](https://luanyi.github.io/), [Haitian Sun](https://scholar.google.com/citations?user=opSHsTQAAAAJ&hl=en), [Soravit Changpinyo](https://schangpi.github.io/), [Alan Ritter](http://aritter.github.io/index.html) and [Ming-Wei Chang](https://mingweichang.org/).
 
@@ -8,7 +8,7 @@
 
 <p align="center">
     <img src="assets/infoseek.jpg" width="100%"> <br>
-    InfoSeek, A New VQA Benchmark focus on Visual Info-Seeking Questions
+    InfoSeek, A New VQA Benchmark focuses on Visual Info-Seeking Questions
 </p>
 
 Please use the following bib entry to cite this paper if you are using any resources from the repo.
@@ -44,7 +44,7 @@ Below is an example of the format for a training data:
 }
 ```
 
-Here `image_id` is indicating which image files this annotation is associated with (note that InfoSeek images are derived from [OVEN](https://github.com/open-vision-language/oven/tree/main/image_downloads)). The `answer` field is indicate the most standard language term for the answer. And the `answer_eval` field is reserved for the evaluation purpose, which includes other accepatable equivalent forms of the `answer`, to imcrease the precision of evaluation.  
+Here `image_id` indicates which image files this annotation is associated with (note that InfoSeek images are derived from [OVEN](https://github.com/open-vision-language/oven/tree/main/image_downloads)). The `answer` field indicates the most standard language term for the answer. And the `answer_eval` field is reserved for the evaluation purpose, which includes other acceptable equivalent forms of the `answer`, to increase the precision of evaluation.  
 
 
 Following are links to each annotation file:
